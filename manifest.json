@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Vibelytics",
+  "version": "1.0",
+  "description": "Feel the vibe. Follow the insights. Turn your YouTube comment section into a powerful insight engine.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content-script.js"],
+      "matches": ["https://www.youtube.com/*", "https://youtube.com/*"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://api.resend.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Vibelytics - YouTube Insights"
+  }
+} 

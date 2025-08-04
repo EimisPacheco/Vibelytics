@@ -1,0 +1,18 @@
+{
+  "method": "GET",
+  "url": "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=pzBi1nwDn8U&maxResults=50&order=relevance&key=AIzaSyB9jxCpFclGwigqmjBZkam0OfRipy8x5sw",
+  "headers": {
+    "Accept": "application/json",
+    "User-Agent": "YouTubeCommentFetcher/1.0"
+  },
+  "parameters": {
+    "part": "snippet,replies",
+    "videoId": "pzBi1nwDn8U",
+    "maxResults": "50",
+    "order": "relevance",
+    "key": "AIzaSyB9jxCpFclGwigqmjBZkam0OfRipy8x5sw"
+  },
+  "timestamp": "2025-08-03T00:39:56.514Z",
+  "videoUrl": "https://www.youtube.com/watch?v=pzBi1nwDn8U",
+  "videoId": "pzBi1nwDn8U"
+}
